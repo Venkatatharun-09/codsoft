@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang=""en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equip="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id ="header">
+        <div class ="container">
+            <nav>
+                <img src="images/tharun logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class ="header-text">
+                <p>PYTHON DEVELOPER</p>
+                <h1>Hi,I'm<br><span>Raja Venkata Tharun</span></h1>
+            </div>
+        </div>
+    </div>
+    <div id ="about">
+        <div class ="container">
+            <div class ="row">
+                <div class ="about-col-1">
+                    <img src="images/image2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Portfolio of Raja Venkata Tharun,certified Python Developer</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('language')">Language</p>
+                    </div>
+                    <div class="tab-contents active-tab">
+                        <ul>
+                            <li><span>Programming languages:</span></li>
+                            <ul>
+                            <li>C</li>
+                            <li>PYTHON</li>
+                            <li>JAVA</li>
+                            <li>Web Development</li>
+                        </ul>
+                        <li><span>Operating Systems:</span></li>
+                        <ul>
+                            <li>Windows</li>
+                            <li>Linux</li>
+                        </ul>
+                        <li><span>Details:</span></li>
+                        <ul>
+                            <li>B.tech in University of JNTUA with specilization Artificial intelligence and Machine Learning</li>
+                            <li>Intermediate in the stream of MPC At Board Of Intermediate</li>
+                            <li>Viswam English Medium High School</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>B.tech in University of JNTUA with specilization Artificial intelligence and Machine Learning</li>
+                            <li><span>2019-2021</span><br>Intermediate in the stream of MPC At Board Of Intermediate</li>
+                            <li><span>2018-2019</span><br>Viswam English Medium High School</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="language">
+                        <ul>
+                            <li><span>Languages Known</span></li>
+                            <li>English</li>
+                            <li>Telugu</li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementById("tab-links");
+        var tabcontents = document.getElementById("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontent){
+                tablink.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+
+    </script>
+</body>
+</html>
